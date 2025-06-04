@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ДанныеУстройства" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постоянные данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные устройства</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ДанныеУстройстваРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="client_id" id="3">
+					<DataPath>client_id</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="client_idКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="client_idРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<InputField name="client_secret" id="6">
+					<DataPath>client_secret</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="client_secretКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="client_secretРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="projectId" id="9">
+					<DataPath>projectId</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="projectIdКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="projectIdРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="redirect_uri" id="45">
+					<DataPath>redirect_uri</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="redirect_uriКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="redirect_uriРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="ИдентификаторУстройства" id="12">
+					<DataPath>ИдентификаторУстройства</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИдентификаторУстройстваКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ИдентификаторУстройстваРасширеннаяПодсказка" id="14"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="КодАвторизации" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="КодАвторизацииРасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<Button name="ПолучаемКодАвторизации" id="28">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучаемКодАвторизации</CommandName>
+					<ExtendedTooltip name="ПолучаемКодАвторизацииРасширеннаяПодсказка" id="29"/>
+				</Button>
+				<InputField name="authorization_code" id="19">
+					<DataPath>authorization_code</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="authorization_codeКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="authorization_codeРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Токены" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ТокеныРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<Button name="ПолучаемТокены" id="30">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучаемТокены</CommandName>
+					<ExtendedTooltip name="ПолучаемТокеныРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<InputField name="access_token" id="22">
+					<DataPath>access_token</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="access_tokenКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="access_tokenРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="expires_in" id="48">
+					<DataPath>expires_in</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="expires_inКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="expires_inРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ДатаПолученияТокена" id="51">
+					<DataPath>ДатаПолученияТокена</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаПолученияТокенаКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ДатаПолученияТокенаРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="ВремяжизниТокена" id="54">
+					<DataPath>ВремяжизниТокена</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВремяжизниТокенаКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ВремяжизниТокенаРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="refresh_token" id="25">
+					<DataPath>refresh_token</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="refresh_tokenКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="refresh_tokenРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<Button name="ОбновитьТокены" id="32">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьТокены</CommandName>
+					<ExtendedTooltip name="ОбновитьТокеныРасширеннаяПодсказка" id="33"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ДанныеСообщения" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ДанныеСообщенияРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<Button name="ОтправитьСообщение" id="57">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтправитьСообщение</CommandName>
+					<ExtendedTooltip name="ОтправитьСообщениеРасширеннаяПодсказка" id="58"/>
+				</Button>
+				<InputField name="ЗаголовокСообщения" id="39">
+					<DataPath>ЗаголовокСообщения</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаголовокСообщенияКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ЗаголовокСообщенияРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ТекстСообщения" id="42">
+					<DataPath>ТекстСообщения</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="44"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОтправкаПушейOauth2</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="projectId" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Project id</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>projectId</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="client_id" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Client id</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>client_id</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="client_secret" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Client secret</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>client_secret</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторУстройства" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор устройства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИдентификаторУстройства</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="authorization_code" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Authorization code</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>authorization_code</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="access_token" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Access token</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>access_token</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="refresh_token" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Refresh token</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>refresh_token</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДатаПолученияТокена" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата получения токена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ДатаПолученияТокена</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗаголовокСообщения" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ЗаголовокСообщения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекстСообщения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ТекстСообщения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="redirect_uri" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Redirect uri</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>redirect_uri</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="expires_in" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Expires in</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>expires_in</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВремяжизниТокена" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Времяжизни токена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ВремяжизниТокена</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучаемКодАвторизации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получаем код авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получаем код авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучаемКодАвторизации</Action>
+		</Command>
+		<Command name="ПолучаемТокены" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получаем токены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получаем токены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Получаемтокены</Action>
+		</Command>
+		<Command name="ОбновитьТокены" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить токены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить токены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьТокены</Action>
+		</Command>
+		<Command name="ОтправитьСообщение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщение</Action>
+		</Command>
+	</Commands>
+</Form>
