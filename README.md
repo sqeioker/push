@@ -1,4 +1,6 @@
-https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg
+<div id="header" align="center">
+  <img src="https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg" width="100"/>
+</div>
 # push
 Push
 Отправка пуш уведомлений из 1с
