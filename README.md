@@ -1,3 +1,4 @@
+https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg
 # push
 Push
 Отправка пуш уведомлений из 1с
